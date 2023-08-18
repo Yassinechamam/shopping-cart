@@ -1,0 +1,54 @@
+.hero {
+  height: auto;
+  background-color: #eeee;
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem ;
+  height: 100%;
+}
+
+.hero .left {
+  padding: 1rem;
+}
+
+.hero h1 {
+  padding: 1rem 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: black
+}
+.hero p {
+    margin: 2rem 0;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.hero .right {
+  padding: 1rem;
+}
+
+.hero .img-container {
+  width: 100%;
+  display: flex;
+}
+
+.hero img {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 940px) {
+  
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
